@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteRule	^view-(.*)-([0-9]+)\.html$	/viewer.php?id=$2 [L]
+</IfModule>
+DirectoryIndex view.php

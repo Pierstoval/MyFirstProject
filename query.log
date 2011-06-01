@@ -1,0 +1,1 @@
+SELECT * FROM astropix_articles WHERE (`title` LIKE '%spirit rover%') ORDER BY artdate desc LIMIT 0, 8

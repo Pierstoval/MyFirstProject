@@ -1,0 +1,212 @@
+@font-face { font-family: Ubuntu; src: url('Ubuntu-R_0.ttf'); }
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+	background				: #000;
+	background-image		: url('moon.jpg');
+	background-position	 	: left;
+	background-attachment	: fixed;
+	background-repeat		: no-repeat;
+	color					: #AEAEAE;
+	font-family				: Ubuntu;
+	margin					: 0px;
+	padding					: 0px;
+	text-align				: center;
+	color					: #EFEFEF; }
+img { border	: none; }
+
+select:active, select:focus, a:active { outline:none; }
+
+a, a:visited{ color: #fcc; }
+a:hover		{ color: #A33; }
+a:active	{ color: #777; }
+
+
+.artview {
+	text-decoration	: none;
+	display			: block;
+	margin			: auto;
+	z-index			:24; }
+.artview img	{ margin: auto; display: block; }
+.artview:hover	{ margin: auto; z-index: 25; }
+.artview span	{ margin: auto; z-index: 26; display: none; }
+.artview:hover span {
+	display		: block;
+	width		: 300px;
+	position	: absolute;
+	text-align	: justify;
+	font-size	: 11px; 
+	color		: #efefef;
+	margin		: -40px auto 0px auto;
+	margin-left	: 180px; 
+	padding		: 3px 5px 5px 5px;
+	z-index		: 27;
+	border		: solid 1px #811;
+	overflow	: visible;
+	background	: url('transpix000.png'); }
+.viewleft:hover span { margin-left: -250px; }
+
+.little  { font-size : 10px; }
+.txtlitl { font-size : 7px; }
+
+#left {
+	position	: relative;
+	float		: left;
+	width		: 186px;
+	margin		: auto;
+	z-index		: 0;
+	overflow	: visible; }
+#right {
+	position	: relative;
+	float		: right;
+	width		: 186px;
+	margin		: auto;
+	z-index		: 0;
+	overflow	: visible; }
+
+input {
+	background	: #AAA;
+	border		: solid 1px #000;
+	margin		: 5px;
+	padding		: 1px 5px; }
+input:hover { background:#CCC; }
+
+#content {
+	position	: relative;
+	width		: 800px;
+	margin		: 20px auto auto auto;
+	background	: url('transpix1.png');
+	padding		: 2px;
+	z-index		: 2; }
+#petitcontenu {
+	font-size	: 11px;
+	border		: solid 1px #000;
+	padding		: 5px;
+	margin		: 4px 4px 3px 4px;
+	text-align	: left; }
+.divform {
+	border		: solid 1px #000;
+	padding		: 5px;
+	margin		: 4px 4px 3px 4px; }
+.tabdata {
+	margin		: 0px;
+	padding		: 0px; }
+.divform:hover, #petitcontenu:hover, .img:hover, .divviewimg:hover {
+	background: url('transpix2.png'); }
+.tabdata tr, .tabdata td {
+	margin		: 0;
+	padding		: 0; }
+.width100px  { width : 100px; }
+
+#contentview, #contentview2 {
+	position	: relative;
+	min-width	: 772px;
+	width		: 75%;
+	max-width	: 1000px;
+	margin		: 20px auto auto auto;
+	background	: url('transpix1.png');
+	padding		: 2px;
+	z-index		: 2;
+	overflow	: visible; }
+/*#contentview2 { margin-bottom: 70px; }*/
+	.divviewimg {
+		border	: solid 1px #000;
+		padding	: 2px;
+		width	: 25em;
+		font-size: 11px;
+		margin	: auto; }
+	.viewpic {
+		overflow	: hidden;
+		border		: none;
+		margin		: 2px 2px 2px 2px;
+		max-width	: 120px;
+		max-height	: 120px; }
+	.viewpic:hover { border: none; }
+
+.divview {
+	border		: solid 1px #000;
+	padding		: 2px 10px;
+	font-size	: 11px;
+	margin		: auto; }
+.divview input{ margin: 0; padding: 2px 4px; }
+.divview.div1 { min-width: 380px; }
+.divview.div2 { min-width: 130px; }
+.divview.div3 { min-width: 82px; text-align:left; }
+.divview.div4 input { margin:3px auto auto 12px; }
+
+.contitl{ margin: 2px 2px 2px 2px; }
+.terms	{ margin: 2px 2px 2px 2px; }
+
+input#asc, input#desc {
+	margin		: 2px 5px;
+	background	: none;
+	border		: none;
+}
+th.divview		{ letter-spacing: 1px; word-spacing: 2px; padding: 5px 0px; font-size: 13px; }
+input#critere	{ letter-spacing: 1px; word-spacing: 2px; padding: 1px 10px; font-size: 12px; }
+.divview label {
+	position		: relative;
+	vertical-align	: middle;
+	bottom			: 1px; }
+.divview label:hover { text-decoration: underline; }
+
+table#menuview { width: 100%; }
+#tri	{ padding: 0px; border: solid 1px #444; width:80px; }
+#tags, #viewimgs { position: relative; top:2px; background: none; border: none; }
+#keywords { height: 16px; width: 180px; }
+
+.paging	{ padding: 0px 5px 0px 5px; margin: 0px 1px 0px 1px; }
+
+#clicktoday { margin: 5px; padding: 0; font-weight: normal; font-size: 11px; }
+
+.artcontent {
+	text-align:left;
+	/*min-height: 250px;*/
+	padding: 10px 10px 10px 10px;
+}
+#artimage { width: 230px; height: 120px; }
+.artlink { height: 90px; }
+
+.blockfb { width: 100px; text-align: center; padding-top: 5px; }
+.blockgp { text-align: center; padding-top: 5px; }
+#blockfb {
+	border:		none;
+	width:		60px;
+	height:		24px;
+	overflow:	hidden;
+}
+
+.gtradsec { font-size: 12px; }
+#tradcon { display: inline; }
+
+h1 {
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+#contenu {
+	padding: 10px;
+	margin: 2px;
+	border: solid 1px #000;
+	text-align: left;
+}
+#contenu p {
+	padding: 3px 0;
+}
+ul li {
+	padding: 2px 10px;
+}
+ul.planetes li {
+	display: inline-block;
+}
+ul {
+	list-style-position: inside;
+}
+#footer {
+	margin: 2px;
+	padding: 10px;
+	border: solid 1px #000;
+	text-align: center;
+}
